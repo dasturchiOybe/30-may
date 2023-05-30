@@ -1,0 +1,399 @@
+.container .text-div8:hover .uchburchak8, .container .text-div7:hover .uchburchak7, .container .text-div6:hover .uchburchak6, .container .text-div5:hover .uchburchak5, .container .text-div4:hover .uchburchak4, .container .text-div3:hover .uchburchak3, .container .text-div2:hover .uchburchak2, .container .text-div1:hover .uchburchak1, .container .text-div8:hover, .container .text-div7:hover, .container .text-div6:hover, .container .text-div5:hover, .container .text-div4:hover, .container .text-div3:hover, .container .text-div2:hover, .container .text-div1:hover {
+  background-color: #f5f5f5;
+}
+.container .text-div8:hover .uchburchak8 *, .container .text-div7:hover .uchburchak7 *, .container .text-div6:hover .uchburchak6 *, .container .text-div5:hover .uchburchak5 *, .container .text-div4:hover .uchburchak4 *, .container .text-div3:hover .uchburchak3 *, .container .text-div2:hover .uchburchak2 *, .container .text-div1:hover .uchburchak1 *, .container .text-div8:hover *, .container .text-div7:hover *, .container .text-div6:hover *, .container .text-div5:hover *, .container .text-div4:hover *, .container .text-div3:hover *, .container .text-div2:hover *, .container .text-div1:hover * {
+  transform: scale(1.1);
+}
+
+.container .text-div8, .container .text-div7, .container .text-div6, .container .text-div5, .container .text-div4, .container .text-div3, .container .text-div2, .container .text-div1 {
+  display: flex;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+}
+.container .text-div8:hover, .container .text-div7:hover, .container .text-div6:hover, .container .text-div5:hover, .container .text-div4:hover, .container .text-div3:hover, .container .text-div2:hover, .container .text-div1:hover {
+  transition: all 0.3s ease-in;
+}
+
+.container .uchburchak8, .container .uchburchak7, .container .uchburchak6, .container .uchburchak5, .container .uchburchak4, .container .uchburchak3, .container .uchburchak2, .container .uchburchak1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  text-align: center;
+}
+
+i {
+  display: block;
+  padding-top: 10px;
+  margin-left: 70px;
+}
+
+p {
+  width: 100px;
+  display: block;
+  margin-top: 40px;
+  margin-left: -65px;
+}
+
+.container {
+  flex-wrap: wrap;
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+}
+.container .uchburchak1 {
+  z-index: 16;
+  background-color: aqua;
+  top: 50px;
+  left: 140px;
+}
+.container .text-div1 {
+  position: relative;
+  background-color: aqua;
+}
+.container .text-div1 * {
+  z-index: 17;
+}
+.container .text-div1:hover .uchburchak1 {
+  transition: all 0.3s ease-in;
+  transform: rotate(45deg);
+}
+.container .text-div2 {
+  position: relative;
+  z-index: 15;
+  background-color: blue;
+}
+.container .text-div2:hover .uchburchak2 {
+  transition: all 0.3s ease-in;
+  transform: rotate(45deg);
+}
+.container .uchburchak2 {
+  z-index: 14;
+  background-color: blue;
+  top: 50px;
+  left: 140px;
+}
+.container .text-div3 {
+  position: relative;
+  background-color: chartreuse;
+  z-index: 13;
+}
+.container .text-div3:hover .uchburchak3 {
+  transition: all 0.3s ease-in;
+  transform: rotate(45deg);
+}
+.container .uchburchak3 {
+  z-index: 12;
+  background-color: chartreuse;
+  top: 50px;
+  left: 140px;
+}
+.container .text-div4 {
+  z-index: 11;
+  position: relative;
+  background-color: chocolate;
+}
+.container .text-div4:hover .uchburchak4 {
+  transition: all 0.3s ease-in;
+  transform: rotate(45deg);
+}
+.container .uchburchak4 {
+  z-index: 10;
+  background-color: chocolate;
+  top: 50px;
+  left: 140px;
+}
+.container .text-div5 {
+  position: relative;
+  z-index: 9;
+  background-color: cornflowerblue;
+}
+.container .text-div5:hover .uchburchak5 {
+  transition: all 0.3s ease-in;
+  transform: rotate(45deg);
+}
+.container .uchburchak5 {
+  z-index: 8;
+  background-color: cornflowerblue;
+  top: 50px;
+  left: 140px;
+}
+.container .text-div6 {
+  position: relative;
+  background-color: darkgreen;
+  z-index: 7;
+}
+.container .text-div6:hover .uchburchak6 {
+  transition: all 0.3s ease-in;
+  transform: rotate(45deg);
+}
+.container .uchburchak6 {
+  z-index: 6;
+  background-color: darkgreen;
+  top: 50px;
+  left: 140px;
+}
+.container .text-div7 {
+  position: relative;
+  z-index: 5;
+  background-color: darkblue;
+}
+.container .text-div7:hover .uchburchak7 {
+  transition: all 0.3s ease-in;
+  transform: rotate(45deg);
+}
+.container .uchburchak7 {
+  z-index: 4;
+  background-color: darkblue;
+  top: 50px;
+  left: 140px;
+}
+.container .text-div8 {
+  z-index: 3;
+  position: relative;
+  background-color: aqua;
+}
+.container .text-div8:hover .uchburchak8 {
+  transition: all 0.3s ease-in;
+  transform: rotate(45deg);
+}
+.container .uchburchak8 {
+  z-index: 2;
+  background-color: aqua;
+  top: 50px;
+  left: 140px;
+}
+
+@media (min-width: 471px) and (max-width: 761px) {
+  .container {
+    width: 90%;
+    margin: 0 2.5%;
+  }
+  .container .text-div1, .container .text-div2, .container .text-div3, .container .text-div4, .container .text-div5, .container .text-div6, .container .text-div7, .container .text-div8 {
+    display: flex;
+    width: 30%;
+    height: 270px;
+    text-align: center;
+  }
+  .container .text-div1 *, .container .text-div2 *, .container .text-div3 *, .container .text-div4 *, .container .text-div5 *, .container .text-div6 *, .container .text-div7 *, .container .text-div8 * {
+    font-size: 30px;
+  }
+  .container i {
+    display: block;
+    padding-top: 30px;
+    margin-left: 45%;
+  }
+  .container p {
+    width: 80%;
+    display: block;
+    padding-top: 50px;
+    margin-left: -60%;
+    margin-right: 5%;
+  }
+  .container .uchburchak1 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak2 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak3 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak4 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak5 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak6 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak7 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak8 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak9 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak10 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak11 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak12 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak13 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak14 {
+    top: 50%;
+    left: 94%;
+  }
+  .container .uchburchak15 {
+    top: 50%;
+    left: 94%;
+  }
+}
+@media (min-width: 0) and (max-width: 470.9px) {
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .container .text-div1, .container .text-div2, .container .text-div3, .container .text-div4, .container .text-div5, .container .text-div6, .container .text-div7, .container .text-div8 {
+    display: flex;
+    width: 90%;
+    height: 40%;
+    text-align: center;
+  }
+  .container .text-div1 *, .container .text-div2 *, .container .text-div3 *, .container .text-div4 *, .container .text-div5 *, .container .text-div6 *, .container .text-div7 *, .container .text-div8 * {
+    font-size: 30px;
+  }
+  .container i {
+    display: block;
+    padding-top: 30px;
+    margin-left: 45%;
+  }
+  .container p {
+    width: 75%;
+    display: block;
+    padding-top: 50px;
+    margin-left: -40%;
+  }
+  .container .uchburchak1 {
+    z-index: 16;
+    background-color: aqua;
+    top: 95%;
+    left: 45%;
+  }
+  .container .text-div1 {
+    position: relative;
+    z-index: 17;
+    background-color: aqua;
+  }
+  .container .text-div1:hover .uchburchak1 {
+    transition: all 0.3s ease-in;
+    transform: rotate(45deg);
+  }
+  .container .text-div2 {
+    position: relative;
+    z-index: 15;
+    background-color: blue;
+  }
+  .container .text-div2:hover .uchburchak2 {
+    transition: all 0.3s ease-in;
+    transform: rotate(45deg);
+  }
+  .container .uchburchak2 {
+    z-index: 14;
+    background-color: blue;
+    top: 95%;
+    left: 45%;
+  }
+  .container .text-div3 {
+    position: relative;
+    background-color: chartreuse;
+    z-index: 13;
+  }
+  .container .text-div3:hover .uchburchak3 {
+    transition: all 0.3s ease-in;
+    transform: rotate(45deg);
+  }
+  .container .uchburchak3 {
+    z-index: 12;
+    background-color: chartreuse;
+    top: 95%;
+    left: 45%;
+  }
+  .container .text-div4 {
+    z-index: 11;
+    position: relative;
+    background-color: chocolate;
+  }
+  .container .text-div4:hover .uchburchak4 {
+    transition: all 0.3s ease-in;
+    transform: rotate(45deg);
+  }
+  .container .uchburchak4 {
+    z-index: 10;
+    background-color: chocolate;
+    top: 95%;
+    left: 45%;
+  }
+  .container .text-div5 {
+    position: relative;
+    z-index: 9;
+    background-color: cornflowerblue;
+  }
+  .container .text-div5:hover .uchburchak5 {
+    transition: all 0.3s ease-in;
+    transform: rotate(45deg);
+  }
+  .container .uchburchak5 {
+    z-index: 8;
+    background-color: cornflowerblue;
+    top: 95%;
+    left: 45%;
+  }
+  .container .text-div6 {
+    position: relative;
+    background-color: darkgreen;
+    z-index: 7;
+  }
+  .container .text-div6:hover .uchburchak6 {
+    transition: all 0.3s ease-in;
+    transform: rotate(45deg);
+  }
+  .container .uchburchak6 {
+    z-index: 6;
+    background-color: darkgreen;
+    top: 95%;
+    left: 45%;
+  }
+  .container .text-div7 {
+    position: relative;
+    z-index: 5;
+    background-color: darkblue;
+  }
+  .container .text-div7:hover .uchburchak7 {
+    transition: all 0.3s ease-in;
+    transform: rotate(45deg);
+  }
+  .container .uchburchak7 {
+    z-index: 4;
+    background-color: darkblue;
+    top: 95%;
+    left: 45%;
+  }
+  .container .text-div8 {
+    position: relative;
+    background-color: aqua;
+  }
+  .container .text-div8:hover .uchburchak8 {
+    transition: all 0.3s ease-in;
+    transform: rotate(45deg);
+  }
+  .container .uchburchak8 {
+    z-index: 3;
+    background-color: aqua;
+    top: 95%;
+    left: 45%;
+  }
+}/*# sourceMappingURL=main.css.map */

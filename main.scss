@@ -1,0 +1,454 @@
+%hover{
+    background-color: #f5f5f5;
+    *{
+        transform: scale(1.1);
+    }
+}
+%ulcham{
+    display: flex;
+    width: 150px;
+    height: 100px;
+    // border: 1px solid red;
+    text-align: center;
+    &:hover{
+        transition: all .3s ease-in;
+        @extend %hover;
+    }
+    
+}
+%uchburchak{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    // margin: 0 auto;
+    text-align: center;
+}
+i{
+    display: block;
+    padding-top: 10px;
+    margin-left: 70px;
+}
+p{
+    width: 100px;
+    display: block;
+    margin-top: 40px;
+    margin-left: -65px;
+}
+.container{
+    flex-wrap: wrap;    
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    .uchburchak1{
+        @extend %uchburchak;
+        z-index: 16;
+        background-color: aqua;
+        top: 50px;
+        left: 140px;
+    }
+    .text-div1{
+        position: relative;
+        *{
+            z-index: 17;
+        }
+        @extend %ulcham;
+        background-color: aqua;
+        
+        &:hover .uchburchak1{
+            transition: all .3s ease-in;
+            @extend %hover;
+            transform: rotate(45deg);
+        }
+    }
+    .text-div2{
+        position: relative;
+        @extend %ulcham;
+        z-index: 15;
+        background-color: blue;
+        &:hover .uchburchak2{
+            transition: all .3s ease-in;
+            @extend %hover;
+            transform: rotate(45deg);
+        }
+    }
+    .uchburchak2{
+        @extend %uchburchak;
+        z-index: 14;
+        background-color: blue;
+        top: 50px;
+        left: 140px;
+    }
+    .text-div3{
+        position: relative;
+        @extend %ulcham;
+        background-color: chartreuse;
+        z-index: 13;
+        &:hover .uchburchak3{
+            transition: all .3s ease-in;
+            @extend %hover;
+            transform: rotate(45deg);
+        }
+    }
+    .uchburchak3{
+        @extend %uchburchak;
+        z-index: 12;
+        background-color: chartreuse;
+        top: 50px;
+        left: 140px;
+    }
+    .text-div4{
+        z-index: 11;
+        position: relative;
+        @extend %ulcham;
+        background-color: chocolate;
+        &:hover .uchburchak4{
+            transition: all .3s ease-in;
+            @extend %hover;
+            transform: rotate(45deg);
+        }
+    }
+    .uchburchak4{
+        @extend %uchburchak;
+        z-index: 10;
+        background-color: chocolate;
+        top: 50px;
+        left: 140px;
+    }
+    .text-div5{
+        position: relative;
+        z-index: 9;
+        @extend %ulcham;
+        background-color: cornflowerblue;
+        &:hover .uchburchak5{
+            transition: all .3s ease-in;
+            @extend %hover;
+            transform: rotate(45deg);
+        }
+    }
+    .uchburchak5{
+        @extend %uchburchak;
+        z-index: 8;
+        background-color: cornflowerblue;
+        top: 50px;
+        left: 140px;
+    }
+    
+    .text-div6{
+        position: relative;
+        @extend %ulcham;
+        background-color:darkgreen;  
+        z-index: 7;
+        &:hover .uchburchak6{
+            transition: all .3s ease-in;
+            @extend %hover;
+            transform: rotate(45deg);
+        }
+    }
+    .uchburchak6{
+        @extend %uchburchak;
+        z-index: 6;
+        background-color: darkgreen;
+        top: 50px;
+        left: 140px;
+    }
+    .text-div7{
+        position: relative;
+        z-index: 5;
+        @extend %ulcham;
+        background-color: darkblue;
+        &:hover .uchburchak7{
+            transition: all .3s ease-in;
+            @extend %hover;
+            transform: rotate(45deg);
+        }
+    }
+    .uchburchak7{
+        @extend %uchburchak;
+        z-index: 4;   
+        background-color: darkblue;
+        top: 50px;
+        left: 140px;
+    }
+    .text-div8{
+        z-index: 3;
+        position: relative;
+        @extend %ulcham;
+        background-color: aqua;
+        &:hover .uchburchak8{
+            transition: all .3s ease-in;
+            @extend %hover;
+            transform: rotate(45deg);
+        }
+    }
+    .uchburchak8{
+        @extend %uchburchak;
+        z-index: 2;
+        background-color: aqua;
+        top: 50px;
+        left: 140px;
+    }
+}
+@media (min-width: 471px) and (max-width:761px){
+
+    .container{
+        width: 90%;
+        margin: 0 2.5%;
+        %ulcham{
+            display: flex;
+            width: 30%;
+            height: 270px;
+            text-align: center;
+            *{
+                font-size: 30px;
+            }
+        }
+        i{
+            display: block;
+            padding-top: 30px;
+            margin-left: 45%;
+        }
+        p{
+            width: 80%;
+            display: block;
+            padding-top: 50px;
+            margin-left: -60%;
+            margin-right: 5%;
+        }
+        .uchburchak1{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak2{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak3{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak4{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak5{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak6{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak7{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak8{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak9{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak10{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak11{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak12{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak13{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak14{
+            top: 50%;
+            left: 94%;
+        }
+        .uchburchak15{
+            top: 50%;
+            left: 94%;
+        }       
+    }
+}
+@media (min-width:0) and (max-width: 470.9px){
+
+
+    .container{
+        width: 90%;
+        margin: 0 5%;
+        %ulcham{
+            display: flex;
+            width: 90%;
+            height: 40%;
+            text-align: center;
+            *{
+                font-size: 30px;
+            }
+        }
+        i{
+            display: block;
+            padding-top: 30px;
+            margin-left: 45%;
+        }
+        p{
+            width: 75%;
+            display: block;
+            padding-top: 50px;
+            margin-left: -40%;
+        }
+
+        .uchburchak1{
+            @extend %uchburchak;
+            z-index: 16;
+            background-color: aqua;
+            top: 95%;
+            left: 45%;
+        }
+        .text-div1{
+            position: relative;
+            z-index: 17;
+            @extend %ulcham;
+            background-color: aqua;
+            
+            &:hover .uchburchak1{
+                transition: all .3s ease-in;
+                @extend %hover;
+                transform: rotate(45deg);
+            }
+        }
+        .text-div2{
+            position: relative;
+            @extend %ulcham;
+            z-index: 15;
+            background-color: blue;
+            &:hover .uchburchak2{
+                transition: all .3s ease-in;
+                @extend %hover;
+                transform: rotate(45deg);
+            }
+        }
+        .uchburchak2{
+            @extend %uchburchak;
+            z-index: 14;
+            background-color: blue;
+            top: 95%;
+            left: 45%;
+        }
+        .text-div3{
+            position: relative;
+            @extend %ulcham;
+            background-color: chartreuse;
+            z-index: 13;
+            &:hover .uchburchak3{
+                transition: all .3s ease-in;
+                @extend %hover;
+                transform: rotate(45deg);
+            }
+        }
+        .uchburchak3{
+            @extend %uchburchak;
+            z-index: 12;
+            background-color: chartreuse;
+            top: 95%;
+            left: 45%;
+        }
+        .text-div4{
+            z-index: 11;
+            position: relative;
+            @extend %ulcham;
+            background-color: chocolate;
+            &:hover .uchburchak4{
+                transition: all .3s ease-in;
+                @extend %hover;
+                transform: rotate(45deg);
+            }
+        }
+        .uchburchak4{
+            @extend %uchburchak;
+            z-index: 10;
+            background-color: chocolate;
+            top: 95%;
+            left: 45%;
+        }
+        .text-div5{
+            position: relative;
+            z-index: 9;
+            @extend %ulcham;
+            background-color: cornflowerblue;
+            &:hover .uchburchak5{
+                transition: all .3s ease-in;
+                @extend %hover;
+                transform: rotate(45deg);
+            }
+        }
+        .uchburchak5{
+            @extend %uchburchak;
+            z-index: 8;
+            background-color: cornflowerblue;
+            top: 95%;
+            left: 45%;
+        }
+        
+        .text-div6{
+            position: relative;
+            @extend %ulcham;
+            background-color:darkgreen;  
+            z-index: 7;
+            &:hover .uchburchak6{
+                transition: all .3s ease-in;
+                @extend %hover;
+                transform: rotate(45deg);
+            }
+        }
+        .uchburchak6{
+            @extend %uchburchak;
+            z-index: 6;
+            background-color: darkgreen;
+            top: 95%;
+            left: 45%;
+        }
+        .text-div7{
+            position: relative;
+            z-index: 5;
+            @extend %ulcham;
+            background-color: darkblue;
+            &:hover .uchburchak7{
+                transition: all .3s ease-in;
+                @extend %hover;
+                transform: rotate(45deg);
+            }
+        }
+        .uchburchak7{
+            @extend %uchburchak;
+            z-index: 4;   
+            background-color: darkblue;
+            top: 95%;
+            left: 45%;
+        }
+        .text-div8{
+            position: relative;
+            @extend %ulcham;
+            background-color: aqua;
+            &:hover .uchburchak8{
+                transition: all .3s ease-in;
+                @extend %hover;
+                transform: rotate(45deg);
+            }
+        }
+        .uchburchak8{
+            @extend %uchburchak;
+            z-index: 3;
+            background-color: aqua;
+            top: 95%;
+            left: 45%;
+        }
+
+    }
+}
